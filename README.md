@@ -11,3 +11,12 @@ The source code is licensed under Apache License, Version 2.0. See the LICENSE f
 Monster Mash uses the Triangle library (https://www.cs.cmu.edu/~quake/triangle.html) which is not a part of this repository. Before compiling the project, please download the source code of the library and place it in the third_party/triangle directory. Please check the license of the Triangle library before doing so.
 
 Disclaimer: This is not an officially supported Google product.
+
+## Building a local Docker container
+
+Create a local version of http://MonsterMash.zone (without any images/asssets).
+
+```bash
+docker build . monstermash
+docker run -p 8000:8000 monstermash
+```
